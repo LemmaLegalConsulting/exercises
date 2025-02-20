@@ -212,7 +212,7 @@ def test_backstage_pass_after_sell_date():
     assert item.sell_in == -11
 
 
-@pytest.mark.skip(reason="Need to implement")
+#@pytest.mark.skip(reason="Need to implement")
 def test_conjured_item_before_sell_date():
     item = gr.Item(name='Conjured Mana Cake', quality=10, sell_in=5)
     rose = gr.GildedRose([item])
@@ -221,7 +221,7 @@ def test_conjured_item_before_sell_date():
     assert item.sell_in == 4
 
 
-@pytest.mark.skip(reason="Need to implement")
+#@pytest.mark.skip(reason="Need to implement")
 def test_conjured_item_before_sell_date_at_zero_quality():
     item = gr.Item(name='Conjured Mana Cake', quality=0, sell_in=5)
     rose = gr.GildedRose([item])
@@ -230,7 +230,7 @@ def test_conjured_item_before_sell_date_at_zero_quality():
     assert item.sell_in == 4
 
 
-@pytest.mark.skip(reason="Need to implement")
+#@pytest.mark.skip(reason="Need to implement")
 def test_conjured_item_on_sell_date():
     item = gr.Item(name='Conjured Mana Cake', quality=10, sell_in=0)
     rose = gr.GildedRose([item])
@@ -239,7 +239,7 @@ def test_conjured_item_on_sell_date():
     assert item.sell_in == -1
 
 
-@pytest.mark.skip(reason="Need to implement")
+#@pytest.mark.skip(reason="Need to implement")
 def test_conjured_item_on_sell_date_at_zero_quality():
     item = gr.Item(name='Conjured Mana Cake', quality=0, sell_in=0)
     rose = gr.GildedRose([item])
@@ -248,7 +248,7 @@ def test_conjured_item_on_sell_date_at_zero_quality():
     assert item.sell_in == -1
 
 
-@pytest.mark.skip(reason="Need to implement")
+#@pytest.mark.skip(reason="Need to implement")
 def test_conjured_item_after_sell_date():
     item = gr.Item(name='Conjured Mana Cake', quality=10, sell_in=-10)
     rose = gr.GildedRose([item])
@@ -257,7 +257,7 @@ def test_conjured_item_after_sell_date():
     assert item.sell_in == -11
 
 
-@pytest.mark.skip(reason="Need to implement")
+#@pytest.mark.skip(reason="Need to implement")
 def test_conjured_item_after_sell_date_at_zero_quality():
     item = gr.Item(name='Conjured Mana Cake', quality=0, sell_in=-10)
     rose = gr.GildedRose([item])
